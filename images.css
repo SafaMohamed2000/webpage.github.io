@@ -1,0 +1,120 @@
+*{
+    padding: 0px;
+    margin: 0;
+}
+.navbar{
+    width:100%;
+    height:80px;
+    background-color: aqua;
+}
+.navbar .name{
+    animation-name: name;
+    color:black;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0%;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+}
+
+.head {
+    margin-top: 0px;
+    transform: translate(50%,50%);
+    align-items: center;
+    margin-right: 400px;
+}
+.head h1{
+    margin-right: 50px;
+}
+.middleFirst{
+    height:100vh;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("safa/16\ \(2\).jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.middleFirst .first .second .third{
+    align-items: center;
+}
+.middleFirst div{
+    margin-top:30px;
+}
+.middleFirst .second{
+    width:600px;
+    height:600px;
+    background-image: url("safa/14.jpeg");
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+.middleFirst .second  p,section .third  p{
+    width:500px;
+    color:white;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 70px;
+}
+.middleFirst .third{
+    background-image: url("safa/4.jpeg");
+    background-repeat: no-repeat;
+    height: 600px;
+    width:600px;
+    opacity: 0.8;
+}
+.middleFirst .third:hover, section .second:hover{
+    transform: translateX(-1);
+    opacity: 1;
+    cursor: pointer;
+
+}
+.middleSecond{
+    margin-top: 10px;
+    background-image: url("safa/16\ \(1\).jpeg");
+    background-repeat: no-repeat;
+    height:230vh;
+    width:100%;
+    background-size: cover;
+}
+.middleSecond h1{
+    margin-left: 600px;
+    color: ivory;
+}
+.middleSecond .secondFirst{
+    margin-left: 500px;
+
+}
+.middleSecond .SecondSecond img{
+    width:200px;
+    height:200px;
+    border-radius: 2%;
+    animation-name: pictures;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    transform: scaleX(-1);
+}
+.middleSecond p{
+    color:white;
+    width:800px;
+    margin-left: 500px;
+    line-height: 40px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+}
+.middleSecond .SecondSecond img:hover{
+    cursor: pointer;
+    animation-play-state: paused;
+    width:500px;
+    height:500px
+}
+@keyframes name{
+    from{margin-left: 0%;}
+    to{margin-left: 100%;}
+}
+@keyframes pictures{
+    from{margin-left:0%; transform: rotate(0deg);}
+    to{margin-left:100%;transform: rotate(360deg);}
+}
